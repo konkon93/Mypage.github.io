@@ -1,0 +1,280 @@
+/***********************
+共通部分
+************************/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+  margin: 0 20px;
+}
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+li{
+  list-style: none;
+}
+
+.inner{
+  width:1110px;
+  margin: 0 auto;
+}
+
+/***********************
+reset_css
+************************/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+/***********************
+header部
+************************/
+
+header{
+  text-align: right;
+  height: 100px;
+}
+
+header ul{
+  display: inline-block;
+  padding-top: 20px;
+}
+
+header ul li{
+  display: inline-block;
+}
+
+header ul li:first-child {
+  margin-right: 20px;
+}
+
+header ul li a{
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #6C757D;
+  display: inline-block;
+  line-height: 48px;
+  padding: 0 15px;
+  border-radius: 5px;
+  height: 48px;
+}
+
+header ul li a:hover{
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0,0,0,.8);
+}
+
+header .inner{
+  position: relative;
+}
+
+header .inner h1{
+  position: absolute;
+  top: 7px;
+}
+
+header ul li{
+  display: inline-block;
+  color: #6C757D;
+  text-align: left;
+  line-height: 1.3;
+  vertical-align: middle;
+}
+
+header ul li h2{
+  font-size: 13px;
+  font-weight: normal;
+}
+
+header ul li p{
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+/***********************
+nav部
+************************/
+
+nav ul li{
+  display: inline-block;
+}
+
+nav{
+  background-color: #343A40;
+  text-align: center;
+}
+
+nav ul{
+  width:1110px;
+  margin: 0 auto;
+}
+
+nav ul li a{
+  display: inline-block;
+  height: 55px;
+  line-height: 55px;
+  color: rgba(255,255,255,.2);
+  padding: 0 35px;
+}
+
+nav ul li a:hover{
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+}
+
+/***********************
+main部
+************************/
+.key_visual{
+  height: 600px;
+  background-image: url(image/top-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.key_visual_content{
+  width: 560px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.key_visual_content h2{
+  margin-bottom: 15px;
+  font-size: 55px;
+  font-weight: 300;
+}
+
+.key_visual_content p{
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.key_visual_content .notice{
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.key_visual{
+  text-align: right;
+}
+
+/**　PCサイズ　**/
+@media screen and (min-width: 1119px){
+}
+
+/**　タブレットサイズ　**/
+@media screen and (min-width: 767px) and (max-width: 1119px){
+}
