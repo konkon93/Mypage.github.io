@@ -1,0 +1,671 @@
+/***********************
+resetcss
+************************/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/***********************
+共通部分
+************************/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.containe{
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1280px;
+}
+
+.wrapper{
+  margin: 0 auto;
+  width: 1030px;
+  max-width: 1030px;
+}
+
+/***********************
+header部分
+************************/
+header{
+  width:  100%;
+  height: 100px;
+}
+
+header nav ul li{
+  padding-top: 20px;
+  padding-right: 40px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+header nav ul li a{
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(0,0,0,.3);
+}
+
+header nav ul li a:hover{
+  color: rgba(0,0,0,.9);
+  text-decoration: none;
+}
+
+#current{
+  color: rgba(0,0,0,.9);
+}
+/***********************
+backimage&form部分
+************************/
+main{
+  margin-bottom: 65px;
+}
+
+.hero_image{
+  width: 100%;
+  height: 700px;
+  background-image: url(image/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 135px;
+}
+
+.forms{
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+  position: absolute;
+  background-color: white;
+  top: 400px;
+  right: 75px;
+}
+
+.forms-sentense{
+  padding: 50px;
+  border-right: 1px solid lightgrey;
+}
+
+.forms-sentense p{
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.forms-sentense p span{
+  color: #E41E57;
+}
+
+.forms-sentense a{
+  font-size: 14px;
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.forms-form{
+  padding: 50px;
+}
+
+.forms-form p{
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+.forms-form .form-box{
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.forms-form .form-box input,
+.forms-form .form-box select{
+  border: none;
+  width: 380px;
+  height: 55px;
+  margin-left: 10px;
+}
+
+.forms-form .form-box ul li{
+  list-style: none;
+  border-bottom: 1px solid lightgrey;
+}
+
+.forms-form .form-box ul li:last-child{
+  border: none;
+}
+
+.plusalfa{
+  font-size: 13px;
+  margin-bottom: 35px;
+  display: inline-block;
+  color: black;
+}
+
+.plusalfa:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.btn{
+  width: 400px;
+  height: 55px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  padding-left: 5px;
+}
+
+/***********************
+explain部分
+************************/
+.first-explain-box{
+  height: 270px;
+  margin:0 auto;
+}
+
+.first-explain{
+  width: 435px;
+  margin: auto;
+}
+
+.first-explain1{
+  margin-right: 50px;
+}
+
+.first-explain2{
+  margin-left: 0;
+}
+
+.first-explain h3{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.first-explain p{
+  font-size: 16px;
+  line-height: 28px;
+}
+
+hr{
+  display: block;
+  margin: 0 auto;
+  height: 1px;
+  margin-bottom: 20px;
+}
+
+.second-explain-box{
+  width: 1030px;
+  margin: 0 auto;
+  margin-bottom: 160px;
+}
+
+.second-explain-box h2{
+  font-size: 58px;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.fa-x{
+    font-size: 3.3em;
+    margin-bottom: 20px;
+}
+
+.second-explain h3{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.second-explain p{
+  font-size: 16px;
+  padding-right: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+/***********************
+user-opinion部分
+************************/
+.user1{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+
+.user1-text{
+  width: 420px;
+}
+
+.user1-text h2{
+  font-size: 100px;
+  font-family: serif;
+  line-height: 0px;
+  margin-top: 70px;
+  color: #FDB32B;
+}
+
+.first-text{
+  font-size: 32px;
+  margin-bottom: 30px;
+  line-height: 40px;
+}
+
+.second-text{
+  font-size: 16px;
+  color: #767676;
+  margin-bottom: 30px;
+}
+
+.user1-text .btn,
+.user2-text .btn
+{
+  height: 45px;
+  width: 220px;
+  line-height: 28px;
+  font-size: 16px;
+  border: 2px solid #484848;
+}
+
+.user1-text .btn:hover,
+.user2-text .btn:hover{
+  background-color: white;
+  color: #343A40;
+}
+
+/***********************
+safety部分
+************************/
+.safety h2{
+  text-align: center;
+  font-size: 58px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.safety-sentence{
+  padding-right: 80px;
+}
+
+.safety-sentence p{
+  color: #484848;
+  font-size: 17px;
+  line-height: 30px;
+  margin-bottom: 22px;
+}
+
+.safety-sentence a{
+  font-size: 17px;
+}
+
+.safety-list ul{
+  list-style: none;
+}
+
+.safety-list ul li .fa-check{
+  color: #108C90;
+  font-size: 20px;
+}
+
+.safety-list ul li span{
+  font-size: 15px;
+}
+
+.safety-list ul li{
+  line-height: 45px;
+}
+
+.safety-list{
+  margin-bottom: 100px;
+}
+
+.safety img{
+  margin-bottom: 160px;
+}
+
+/***********************
+payment部分
+************************/
+.payment .payment-explain h2{
+  font-size: 58px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.payment-explain-content p,
+.payment-explain-content h3{
+  width: 290px;
+}
+
+.payment-explain-content p{
+  font-size: 16px;
+  color: #7D7D7D;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.payment-explain-content h3{
+  font-size: 24px;
+  font-weight: bold;
+  color: #484848;
+  margin-bottom: 30px;
+}
+
+.payment-explain{
+  margin-bottom: 170px;
+}
+
+.user2{
+  margin-bottom: 160px;
+}
+
+.user2-text{
+  margin-left: 65px;
+  margin-top: 90px;
+}
+
+.user2-text h2{
+  color: #FDB32B;
+  font-size: 100px;
+  font-family: serif;
+  line-height: 0;
+  padding-top: 50px;
+}
+
+/***********************
+about部分
+************************/
+.about{
+  margin-bottom: 160px;
+}
+
+.about h2{
+  font-size: 58px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-text{
+  width:440px;
+}
+
+.about-text h3{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-text p{
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+/***********************
+quetion部分
+************************/
+.question{
+  margin-bottom: 100px;
+}
+
+.question-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.question h2{
+  font-size: 58px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.question ul{
+  width: 510px;
+  display: inline-block;
+}
+
+.question li{
+  list-style: none;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.question a{
+  font-size: 18px;
+}
+
+/***********************
+detail部分
+************************/
+.detail{
+  margin-bottom: 100px;
+}
+
+.detail h2{
+  font-size: 24px;
+  color: #48484E;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.detail-box{
+  width: 333px;
+}
+
+.detail-box img{
+  width: inherit;
+  margin-bottom: 18px;
+}
+
+.detail-box h4{
+  color: #484848;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.detail-box p{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/***********************
+main-finish部分
+************************/
+.lets-start{
+  height: 440px;
+  background-image: url(image/back1.jpg);
+  position: relative;
+}
+
+.lets-start-content{
+  width: 400px;
+  height: 220px;
+  top: 100px;
+  left: 125px;
+  position: absolute;
+}
+
+.lets-start-content p{
+  font-size: 55px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.lets-start-content .btn{
+  width: 115px;
+  height: 50px;
+  background-color: white;
+}
+
+/***********************
+footer部分
+************************/
+footer{
+  background-color: #F7F7F7;
+  border-top: 1px solid #DDDDDD;
+}
+
+.footer-wrapper{
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 1200px;
+}
+
+.footer-list{
+  margin-top: 50px;
+  font-size: 12px;
+  line-height: 35px;
+  margin-bottom: 40px;
+}
+
+.footer-content li{
+  list-style: none;
+}
+
+.footer-content h2{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-content ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+.footer-content ul li a:hover{
+  color: black;2
+  text-decoration: underline;
+}
+/***********************
+last-footer部分
+************************/
+.last-footer{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.last-footer .last-footer-right a{
+  color: #222222;
+  padding: 0 15px;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.last-footer .last-footer-left a{
+  color: #222222;
+  font-size: 16px;
+}
